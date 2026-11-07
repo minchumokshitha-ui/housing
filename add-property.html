@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Add your property details, photos and seller contact information to E-Housing.">
+  <title>List Your Property | E-Housing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="E-Housing home">E-<span>Housing</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="buy.html">Buy</a>
+        <a href="rent.html">Rent</a>
+        <a href="owner-dashboard.html">Owner Dashboard</a>
+        <a href="index.html#why-us">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-buttons">
+        <a class="favorites-link" href="favorites.html">♡ Favorites <span class="favorites-count">0</span></a>
+        <a class="login-btn" href="login.html">Login</a>
+        <a class="btn btn-small" href="register.html">Register <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+  <main class="listing-main">
+    <section class="listing-banner">
+      <div class="container">
+        <p class="eyebrow eyebrow-dark">SHARE YOUR PROPERTY</p>
+        <h1>List Your Property</h1>
+        <p>Add property photos, details and your contact information.</p>
+      </div>
+    </section>
+    <section class="section listing-section">
+      <div class="container">
+        <p class="listing-published-message" id="listing-published-message" role="status" hidden></p>
+        <form class="property-form" id="property-listing-form">
+          <h2>Property details</h2>
+          <p class="section-subtitle">Tell buyers and renters what makes your property a great choice.</p>
+          <div class="property-form-grid">
+            <label class="form-field" for="property-title">Property title<input id="property-title" name="title" type="text" maxlength="80" placeholder="e.g. Spacious 2BHK Apartment" required></label>
+            <label class="form-field" for="property-type">Property type
+              <select id="property-type" name="type" required>
+                <option value="">Select a type</option>
+                <option>House</option><option>Apartment</option><option>Villa</option><option>Room</option>
+              </select>
+            </label>
+            <label class="form-field" for="listing-type">Listing type
+              <select id="listing-type" name="listing" required><option value="">Select sale or rent</option><option>For Sale</option><option>For Rent</option></select>
+            </label>
+            <label class="form-field" for="property-price">Price (₹)<input id="property-price" name="price" type="number" min="1" step="1" placeholder="e.g. 25000" required></label>
+            <label class="form-field" for="property-city">City<input id="property-city" name="city" type="text" maxlength="60" placeholder="e.g. Bengaluru" required></label>
+            <label class="form-field" for="property-location">Area / neighbourhood<input id="property-location" name="location" type="text" maxlength="100" placeholder="e.g. Whitefield" required></label>
+            <label class="form-field" for="property-bedrooms">Bedrooms<input id="property-bedrooms" name="bedrooms" type="number" min="0" max="99" placeholder="e.g. 2" required></label>
+            <label class="form-field" for="property-bathrooms">Bathrooms<input id="property-bathrooms" name="bathrooms" type="number" min="0" max="99" placeholder="e.g. 2" required></label>
+            <label class="form-field" for="property-area">Built-up area (sq.ft)<input id="property-area" name="area" type="number" min="1" placeholder="e.g. 1200" required></label>
+            <label class="form-field property-photo-field" for="property-photo">Property photo
+              <input id="property-photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp" required>
+              <span class="field-help">Choose one JPG, PNG or WebP image up to 8 MB. It is resized and compressed before being stored in this browser.</span>
+              <img class="photo-preview" id="photo-preview" alt="Selected property photo preview" hidden>
+            </label>
+            <label class="form-field property-description-field" for="property-description">Property description<textarea id="property-description" name="description" rows="4" maxlength="800" placeholder="Describe the property, its condition and nearby amenities." required></textarea></label>
+          </div>
+
+          <div class="seller-details">
+            <h2>Seller / owner details</h2>
+            <p class="section-subtitle">These details will be shown with your listing so interested people can contact you.</p>
+            <div class="property-form-grid">
+              <label class="form-field" for="seller-name">Seller / owner name<input id="seller-name" name="sellerName" type="text" maxlength="80" autocomplete="name" placeholder="Your full name" required></label>
+              <label class="form-field" for="seller-phone">Contact number<input id="seller-phone" name="sellerPhone" type="tel" minlength="8" maxlength="20" autocomplete="tel" placeholder="+91 98765 43210" required></label>
+              <label class="form-field seller-email-field" for="seller-email">Email address<input id="seller-email" name="sellerEmail" type="email" maxlength="120" autocomplete="email" placeholder="you@example.com" required></label>
+            </div>
+          </div>
+
+          <p class="form-note">Demo mode: listings are saved only in this browser. Anyone using this browser can view the seller contact details. No server upload or account privacy is provided.</p>
+          <p class="listing-form-error" id="listing-form-error" role="alert" hidden></p>
+          <button class="btn property-submit" type="submit">Publish Property <span aria-hidden="true">→</span></button>
+        </form>
+
+        <section class="seller-listings-section" aria-labelledby="seller-listings-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow eyebrow-dark">YOUR DEMO POSTS</p>
+              <h2 id="seller-listings-title">Properties You Listed</h2>
+              <p class="section-subtitle">Listings saved from this browser appear here and on Buy or Rent.</p>
+            </div>
+          </div>
+          <p class="favorites-empty" id="seller-listings-empty">You haven't listed a property yet.</p>
+          <div class="property-grid" id="seller-listings-grid"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contact">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="logo footer-logo" href="index.html">E-<span>Housing</span></a><p>Your trusted property finder in Karnataka.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="index.html#why-us">About</a><a href="index.html#contact">Contact</a><a href="login.html">Login</a></div>
+    </div>
+  </footer>
+  <script src="js/properties.js"></script>
+  <script src="js/seller-listings.js"></script>
+  <script src="js/seller-form.js"></script>
+  <script src="js/seller-listings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

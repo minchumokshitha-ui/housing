@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse houses and apartments for rent across Karnataka with E-Housing.">
+  <title>Properties for Rent | E-Housing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="E-Housing home">E-<span>Housing</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="buy.html">Buy</a>
+        <a class="active" href="rent.html">Rent</a>
+        <a href="owner-dashboard.html">Owner Dashboard</a>
+        <a href="index.html#why-us">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-buttons">
+        <a class="favorites-link" href="favorites.html">♡ Favorites <span class="favorites-count">0</span></a>
+        <a class="login-btn" href="login.html">Login</a>
+        <a class="btn btn-small" href="register.html">Register <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+  <main class="listing-main">
+    <section class="listing-banner">
+      <div class="container">
+        <p class="eyebrow eyebrow-dark">FIND YOUR NEXT PLACE</p>
+        <h1>Properties for Rent</h1>
+        <p>Find a comfortable home to rent across Karnataka.</p>
+      </div>
+    </section>
+    <section class="section listing-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">EXPLORE KARNATAKA</p>
+            <h2>Homes for Rent</h2>
+            <p class="section-subtitle">Browse available rentals and discover a place that feels like home.</p>
+          </div>
+          <a class="view-all" href="buy.html">Looking to buy? <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="search-results" data-search-results role="status" aria-live="polite" hidden></p>
+        <div class="search-empty" data-search-empty hidden>
+          <h3>No matching rental homes found</h3>
+          <p>Try another location or property type.</p>
+          <a class="btn" href="rent.html">Browse all rentals</a>
+        </div>
+        <div class="property-grid" data-listing-grid="For Rent">
+          <article class="property-card">
+            <a class="property-image" href="property-details.html#modern-2bhk-apartment" aria-label="View Modern 2BHK Apartment">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Bright modern apartment interior with a comfortable living area">
+              <span class="badge rent-badge">For Rent</span>
+            </a>
+            <div class="property-info">
+              <p class="property-type">APARTMENT <span>·</span> BENGALURU</p>
+              <h3><a href="property-details.html#modern-2bhk-apartment">Modern 2BHK Apartment</a></h3>
+              <button class="favorite-btn" type="button" data-property-id="modern-2bhk-apartment" aria-pressed="false">♡ Add to Favorites</button>
+              <p class="property-location"><span aria-hidden="true">📍</span> Whitefield, Bengaluru</p>
+              <p class="price">₹25,000<span class="price-period"> / month</span></p>
+              <div class="property-meta"><span>🛏 2 beds</span><span>🚿 2 baths</span><span>📐 1,200 sq.ft</span></div>
+              <a class="btn full-btn" href="property-details.html#modern-2bhk-apartment">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="property-card">
+            <a class="property-image" href="property-details.html#garden-view-1bhk-apartment" aria-label="View Garden View 1BHK Apartment">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Warm, sunlit apartment living room with garden views">
+              <span class="badge rent-badge">For Rent</span>
+            </a>
+            <div class="property-info">
+              <p class="property-type">APARTMENT <span>·</span> BENGALURU</p>
+              <h3><a href="property-details.html#garden-view-1bhk-apartment">Garden View 1BHK Apartment</a></h3>
+              <button class="favorite-btn" type="button" data-property-id="garden-view-1bhk-apartment" aria-pressed="false">♡ Add to Favorites</button>
+              <p class="property-location"><span aria-hidden="true">📍</span> Jayanagar, Bengaluru</p>
+              <p class="price">₹18,000<span class="price-period"> / month</span></p>
+              <div class="property-meta"><span>🛏 1 bed</span><span>🚿 1 bath</span><span>📐 750 sq.ft</span></div>
+              <a class="btn full-btn" href="property-details.html#garden-view-1bhk-apartment">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="property-card">
+            <a class="property-image" href="property-details.html#family-home-mysuru" aria-label="View Bright 3BHK Family Home">
+              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Bright family home with a spacious, welcoming living room">
+              <span class="badge rent-badge">For Rent</span>
+            </a>
+            <div class="property-info">
+              <p class="property-type">INDEPENDENT HOUSE <span>·</span> MYSURU</p>
+              <h3><a href="property-details.html#family-home-mysuru">Bright 3BHK Family Home</a></h3>
+              <button class="favorite-btn" type="button" data-property-id="family-home-mysuru" aria-pressed="false">♡ Add to Favorites</button>
+              <p class="property-location"><span aria-hidden="true">📍</span> Saraswathipuram, Mysuru</p>
+              <p class="price">₹32,000<span class="price-period"> / month</span></p>
+              <div class="property-meta"><span>🛏 3 beds</span><span>🚿 2 baths</span><span>📐 1,650 sq.ft</span></div>
+              <a class="btn full-btn" href="property-details.html#family-home-mysuru">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contact">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="logo footer-logo" href="index.html">E-<span>Housing</span></a><p>Your trusted property finder in Karnataka.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="index.html#why-us">About</a><a href="index.html#contact">Contact</a><a href="login.html">Login</a></div>
+    </div>
+  </footer>
+  <script src="js/properties.js"></script>
+  <script src="js/seller-listings.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

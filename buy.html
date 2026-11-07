@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse houses, apartments and villas for sale across Karnataka with E-Housing.">
+  <title>Properties for Sale | E-Housing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="E-Housing home">E-<span>Housing</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="buy.html">Buy</a>
+        <a href="rent.html">Rent</a>
+        <a href="owner-dashboard.html">Owner Dashboard</a>
+        <a href="index.html#why-us">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-buttons">
+        <a class="favorites-link" href="favorites.html">♡ Favorites <span class="favorites-count">0</span></a>
+        <a class="login-btn" href="login.html">Login</a>
+        <a class="btn btn-small" href="register.html">Register <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+  <main class="listing-main">
+    <section class="listing-banner">
+      <div class="container">
+        <p class="eyebrow eyebrow-dark">FIND A PLACE TO CALL YOUR OWN</p>
+        <h1>Properties for Sale</h1>
+        <p>Explore homes and properties for sale across Karnataka.</p>
+      </div>
+    </section>
+    <section class="section listing-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">EXPLORE KARNATAKA</p>
+            <h2>Homes for Sale</h2>
+            <p class="section-subtitle">Browse our featured homes and find the right fit.</p>
+          </div>
+          <a class="view-all" href="rent.html">Looking to rent? <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="search-results" data-search-results role="status" aria-live="polite" hidden></p>
+        <div class="search-empty" data-search-empty hidden>
+          <h3>No matching properties for sale found</h3>
+          <p>Try another location or property type.</p>
+          <a class="btn" href="buy.html">Browse all properties for sale</a>
+        </div>
+        <div class="property-grid" data-listing-grid="For Sale">
+          <article class="property-card">
+            <a class="property-image" href="property-details.html#luxury-independent-house" aria-label="View Luxury Independent House">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=85" alt="Contemporary independent house surrounded by greenery">
+              <span class="badge">For Sale</span>
+            </a>
+            <div class="property-info">
+              <p class="property-type">INDEPENDENT HOUSE <span>·</span> MYSURU</p>
+              <h3><a href="property-details.html#luxury-independent-house">Luxury Independent House</a></h3>
+              <button class="favorite-btn" type="button" data-property-id="luxury-independent-house" aria-pressed="false">♡ Add to Favorites</button>
+              <p class="property-location"><span aria-hidden="true">📍</span> Vijayanagar, Mysuru</p>
+              <p class="price">₹85,00,000</p>
+              <div class="property-meta"><span>🛏 3 beds</span><span>🚿 2 baths</span><span>📐 1,800 sq.ft</span></div>
+              <a class="btn full-btn" href="property-details.html#luxury-independent-house">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="property-card">
+            <a class="property-image" href="property-details.html#beautiful-family-villa" aria-label="View Beautiful Family Villa">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Beautiful family villa with landscaped garden">
+              <span class="badge">For Sale</span>
+            </a>
+            <div class="property-info">
+              <p class="property-type">VILLA <span>·</span> MANGALURU</p>
+              <h3><a href="property-details.html#beautiful-family-villa">Beautiful Family Villa</a></h3>
+              <button class="favorite-btn" type="button" data-property-id="beautiful-family-villa" aria-pressed="false">♡ Add to Favorites</button>
+              <p class="property-location"><span aria-hidden="true">📍</span> Mangaluru, Karnataka</p>
+              <p class="price">₹1,20,00,000</p>
+              <div class="property-meta"><span>🛏 4 beds</span><span>🚿 3 baths</span><span>📐 2,400 sq.ft</span></div>
+              <a class="btn full-btn" href="property-details.html#beautiful-family-villa">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="property-card">
+            <a class="property-image" href="property-details.html#lakeview-3bhk-apartment" aria-label="View Lakeview 3BHK Apartment">
+              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Modern apartment building with a bright, spacious interior">
+              <span class="badge">For Sale</span>
+            </a>
+            <div class="property-info">
+              <p class="property-type">APARTMENT <span>·</span> BENGALURU</p>
+              <h3><a href="property-details.html#lakeview-3bhk-apartment">Lakeview 3BHK Apartment</a></h3>
+              <button class="favorite-btn" type="button" data-property-id="lakeview-3bhk-apartment" aria-pressed="false">♡ Add to Favorites</button>
+              <p class="property-location"><span aria-hidden="true">📍</span> Hebbal, Bengaluru</p>
+              <p class="price">₹78,00,000</p>
+              <div class="property-meta"><span>🛏 3 beds</span><span>🚿 2 baths</span><span>📐 1,550 sq.ft</span></div>
+              <a class="btn full-btn" href="property-details.html#lakeview-3bhk-apartment">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="property-card">
+            <a class="property-image" href="property-details.html#courtyard-family-home" aria-label="View Courtyard Family Home">
+              <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=85" alt="Contemporary family home with a peaceful private courtyard">
+              <span class="badge">For Sale</span>
+            </a>
+            <div class="property-info">
+              <p class="property-type">INDEPENDENT HOUSE <span>·</span> HUBBALLI</p>
+              <h3><a href="property-details.html#courtyard-family-home">Courtyard Family Home</a></h3>
+              <button class="favorite-btn" type="button" data-property-id="courtyard-family-home" aria-pressed="false">♡ Add to Favorites</button>
+              <p class="property-location"><span aria-hidden="true">📍</span> Vidyanagar, Hubballi</p>
+              <p class="price">₹68,00,000</p>
+              <div class="property-meta"><span>🛏 3 beds</span><span>🚿 2 baths</span><span>📐 1,700 sq.ft</span></div>
+              <a class="btn full-btn" href="property-details.html#courtyard-family-home">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contact">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="logo footer-logo" href="index.html">E-<span>Housing</span></a><p>Your trusted property finder in Karnataka.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="index.html#why-us">About</a><a href="index.html#contact">Contact</a><a href="login.html">Login</a></div>
+    </div>
+  </footer>
+  <script src="js/properties.js"></script>
+  <script src="js/seller-listings.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

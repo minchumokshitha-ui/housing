@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request to hold or book a property with E-Housing.">
+  <title>Request to Hold a Property | E-Housing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="E-Housing home">E-<span>Housing</span></a>
+      <a class="login-home-link" href="index.html">← Back to Home</a>
+    </div>
+  </header>
+  <main class="listing-main">
+    <section class="listing-banner">
+      <div class="container">
+        <p class="eyebrow eyebrow-dark">TAKE THE NEXT STEP</p>
+        <h1 id="booking-page-title">Request to Hold a Property</h1>
+        <p id="booking-intro">Send your interest to the seller or owner.</p>
+      </div>
+    </section>
+    <section class="section listing-section">
+      <div class="container booking-layout">
+        <section class="booking-summary" aria-labelledby="booking-property-title">
+          <p class="eyebrow eyebrow-dark">PROPERTY SELECTED</p>
+          <span class="booking-listing" id="booking-property-listing"></span>
+          <h2 id="booking-property-title">Loading property…</h2>
+          <p class="property-location" id="booking-property-location"></p>
+          <p class="price" id="booking-property-price"></p>
+          <a class="view-all" id="booking-property-link" href="property-details.html">View property details →</a>
+        </section>
+        <section class="booking-form-panel" aria-labelledby="booking-form-title">
+          <h2 id="booking-form-title">Your contact details</h2>
+          <p class="section-subtitle">The seller can use these details to follow up on your request.</p>
+          <p class="booking-notice" id="booking-notice">This demo sends a hold request only. It does not purchase, reserve, or guarantee the property, and no payment is collected.</p>
+          <p class="booking-error" id="booking-error" role="alert" hidden></p>
+          <form class="property-form-inner" id="hold-form">
+            <label class="form-field" for="buyer-name">Full name<input id="buyer-name" name="name" type="text" autocomplete="name" placeholder="Your name" required></label>
+            <label class="form-field" for="buyer-phone">Contact number<input id="buyer-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" minlength="8" maxlength="20" placeholder="+91 98765 43210" required></label>
+            <label class="form-field" for="buyer-email">Email address<input id="buyer-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+            <label class="form-field" for="payment-preference" id="payment-preference-field" hidden>
+              Preferred payment method
+              <select id="payment-preference" name="paymentMethod" disabled>
+                <option value="">Select a payment preference</option>
+                <option value="UPI">UPI</option>
+                <option value="Bank transfer">Bank transfer</option>
+                <option value="Card">Card</option>
+                <option value="Home loan">Home loan / financing</option>
+                <option value="Discuss with seller">Discuss with seller</option>
+              </select>
+            </label>
+            <button class="btn property-submit" id="booking-submit" type="submit">Send Hold Request <span aria-hidden="true">→</span></button>
+          </form>
+          <div class="booking-confirmation" id="booking-confirmation" role="status" hidden>
+            <span class="booking-check" aria-hidden="true">✓</span>
+            <h2 id="confirmation-title">Request saved</h2>
+            <p id="confirmation-message">Thanks, <strong id="confirmation-name"></strong>. Your demo request is saved in this browser. The property is not confirmed or held until the seller contacts you.</p>
+            <a class="btn" href="index.html">Back to Home</a>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contact">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="logo footer-logo" href="index.html">E-<span>Housing</span></a><p>Your trusted property finder in Karnataka.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="index.html#why-us">About</a><a href="index.html#contact">Contact</a><a href="login.html">Login</a></div>
+    </div>
+  </footer>
+  <script src="js/booking.js"></script>
+</body>
+</html>

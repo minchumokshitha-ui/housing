@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create an E-Housing account.">
+  <title>Register | E-Housing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="E-Housing home">E-<span>Housing</span></a>
+      <a class="login-home-link" href="index.html">← Back to Home</a>
+    </div>
+  </header>
+  <main class="login-main">
+    <section class="login-card" aria-labelledby="register-title">
+      <a class="logo login-card-logo" href="index.html" aria-label="E-Housing home">E-<span>Housing</span></a>
+      <p class="eyebrow eyebrow-dark">JOIN E-HOUSING</p>
+      <h1 id="register-title">Create your account</h1>
+      <p class="login-subtitle">Start finding your place in Karnataka.</p>
+      <form class="login-form" action="#" method="get">
+        <label class="form-field" for="name"><span>Full name</span><input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required></label>
+        <label class="form-field" for="email"><span>Email address</span><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+        <label class="form-field" for="password"><span>Password</span><input id="password" name="password" type="password" autocomplete="new-password" placeholder="Create a password" required></label>
+        <button class="btn login-submit" type="submit">Create Account <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="form-note">College mini project demo: account creation is not connected to a service.</p>
+      <p class="signup-prompt">Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+  </main>
+</body>
+</html>

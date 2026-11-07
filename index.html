@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find houses, apartments, villas and rooms for rent or sale across Karnataka with E-Housing.">
+  <title>E-Housing | Find Your Perfect Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="E-Housing home">E-<span>Housing</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="buy.html">Buy</a>
+        <a href="rent.html">Rent</a>
+        <a href="owner-dashboard.html">Owner Dashboard</a>
+        <a href="#why-us">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-buttons">
+        <a class="favorites-link" href="favorites.html">♡ Favorites <span class="favorites-count">0</span></a>
+        <a class="login-btn" href="login.html">Login</a>
+        <a class="btn btn-small" href="register.html">Register <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container login-status" id="login-status" role="status" aria-live="polite" hidden>
+      <span aria-hidden="true">✓</span> Login successful! Welcome to E-Housing.
+    </div>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow"><span></span> WELCOME TO E-HOUSING</p>
+        <h1>Find Your<br><span>Perfect Home</span></h1>
+        <p class="hero-description">Discover houses, apartments, villas and rooms for rent or sale in the places you love across Karnataka.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#featured">Explore Properties <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="rent.html">Find Rentals</a>
+        </div>
+        <div class="hero-note"><span class="hero-note-icon" aria-hidden="true">⌖</span> Find a place to call home, anywhere in Karnataka.</div>
+      </div>
+      <a class="scroll-cue" href="#property-search" aria-label="Scroll to property search"><span></span></a>
+    </section>
+
+    <section class="search-section" id="property-search" aria-labelledby="search-title">
+      <div class="container search-panel">
+        <div class="search-intro">
+          <p class="eyebrow eyebrow-dark">LET'S FIND YOUR PLACE</p>
+          <h2 id="search-title">Find Your Dream Property</h2>
+        </div>
+        <form class="search-form" action="buy.html" method="get" data-property-search>
+          <label class="form-field location-field">
+            <span>Location</span>
+            <span class="input-wrap"><span aria-hidden="true">⌖</span><input type="search" name="location" placeholder="e.g. Bengaluru, Whitefield"></span>
+          </label>
+          <label class="form-field">
+            <span>Property Type</span>
+            <select name="type">
+              <option value="">Any property</option>
+              <option value="house">Independent house</option>
+              <option value="apartment">Apartment</option>
+              <option value="villa">Villa</option>
+              <option value="room">Room</option>
+            </select>
+          </label>
+          <label class="form-field">
+            <span>Looking to</span>
+            <select name="listing">
+              <option value="buy">Buy</option>
+              <option value="rent">Rent</option>
+            </select>
+          </label>
+          <button class="btn search-button" type="submit"><span aria-hidden="true">⌕</span> Search Homes</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section featured-section" id="featured">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">HANDPICKED FOR YOU</p>
+            <h2>Featured Properties</h2>
+            <p class="section-subtitle">A few places we think you might love.</p>
+          </div>
+          <a class="view-all" href="buy.html">View All <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="property-grid">
+          <article class="property-card">
+            <a class="property-image" href="property-details.html#luxury-independent-house" aria-label="View Luxury Independent House">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=85" alt="Contemporary independent house surrounded by greenery">
+              <span class="badge">For Sale</span>
+              <span class="image-heart" aria-hidden="true">♡</span>
+            </a>
+            <div class="property-info">
+              <p class="property-type">INDEPENDENT HOUSE <span>·</span> MYSURU</p>
+              <h3><a href="property-details.html#luxury-independent-house">Luxury Independent House</a></h3>
+              <button class="favorite-btn" type="button" data-property-id="luxury-independent-house" aria-pressed="false">♡ Add to Favorites</button>
+              <p class="property-location"><span aria-hidden="true">📍</span> Vijayanagar, Mysuru</p>
+              <p class="price">₹85,00,000</p>
+              <div class="property-meta">
+                <span><span aria-hidden="true">🛏</span> 3 beds</span>
+                <span><span aria-hidden="true">🚿</span> 2 baths</span>
+                <span><span aria-hidden="true">📐</span> 1,800 sq.ft</span>
+              </div>
+              <a class="btn full-btn" href="property-details.html#luxury-independent-house">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <a class="property-image" href="property-details.html#modern-2bhk-apartment" aria-label="View Modern 2BHK Apartment">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Bright modern apartment interior with a comfortable living area">
+              <span class="badge rent-badge">For Rent</span>
+              <span class="image-heart" aria-hidden="true">♡</span>
+            </a>
+            <div class="property-info">
+              <p class="property-type">APARTMENT <span>·</span> BENGALURU</p>
+              <h3><a href="property-details.html#modern-2bhk-apartment">Modern 2BHK Apartment</a></h3>
+              <button class="favorite-btn" type="button" data-property-id="modern-2bhk-apartment" aria-pressed="false">♡ Add to Favorites</button>
+              <p class="property-location"><span aria-hidden="true">📍</span> Whitefield, Bengaluru</p>
+              <p class="price">₹25,000<span class="price-period"> / month</span></p>
+              <div class="property-meta">
+                <span><span aria-hidden="true">🛏</span> 2 beds</span>
+                <span><span aria-hidden="true">🚿</span> 2 baths</span>
+                <span><span aria-hidden="true">📐</span> 1,200 sq.ft</span>
+              </div>
+              <a class="btn full-btn" href="property-details.html#modern-2bhk-apartment">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <a class="property-image" href="property-details.html#beautiful-family-villa" aria-label="View Beautiful Family Villa">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Beautiful family villa with landscaped garden">
+              <span class="badge">For Sale</span>
+              <span class="image-heart" aria-hidden="true">♡</span>
+            </a>
+            <div class="property-info">
+              <p class="property-type">VILLA <span>·</span> MANGALURU</p>
+              <h3><a href="property-details.html#beautiful-family-villa">Beautiful Family Villa</a></h3>
+              <button class="favorite-btn" type="button" data-property-id="beautiful-family-villa" aria-pressed="false">♡ Add to Favorites</button>
+              <p class="property-location"><span aria-hidden="true">📍</span> Mangaluru, Karnataka</p>
+              <p class="price">₹1,20,00,000</p>
+              <div class="property-meta">
+                <span><span aria-hidden="true">🛏</span> 4 beds</span>
+                <span><span aria-hidden="true">🚿</span> 3 baths</span>
+                <span><span aria-hidden="true">📐</span> 2,400 sq.ft</span>
+              </div>
+              <a class="btn full-btn" href="property-details.html#beautiful-family-villa">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <a class="property-image" href="property-details.html#lakeview-3bhk-apartment" aria-label="View Lakeview 3BHK Apartment">
+              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Modern apartment with a bright, spacious interior">
+              <span class="badge">For Sale</span>
+              <span class="image-heart" aria-hidden="true">♡</span>
+            </a>
+            <div class="property-info">
+              <p class="property-type">APARTMENT <span>·</span> BENGALURU</p>
+              <h3><a href="property-details.html#lakeview-3bhk-apartment">Lakeview 3BHK Apartment</a></h3>
+              <button class="favorite-btn" type="button" data-property-id="lakeview-3bhk-apartment" aria-pressed="false">♡ Add to Favorites</button>
+              <p class="property-location"><span aria-hidden="true">📍</span> Hebbal, Bengaluru</p>
+              <p class="price">₹78,00,000</p>
+              <div class="property-meta">
+                <span><span aria-hidden="true">🛏</span> 3 beds</span>
+                <span><span aria-hidden="true">🚿</span> 2 baths</span>
+                <span><span aria-hidden="true">📐</span> 1,550 sq.ft</span>
+              </div>
+              <a class="btn full-btn" href="property-details.html#lakeview-3bhk-apartment">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-section" id="why-us">
+      <div class="container">
+        <div class="section-heading centered-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">A BETTER WAY TO FIND HOME</p>
+            <h2>Why Choose E-Housing?</h2>
+            <p class="section-subtitle">A simpler way to make your next move in Karnataka.</p>
+          </div>
+        </div>
+        <div class="features feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon choices-icon" aria-hidden="true">🏡</div>
+            <h3>Wide Property Choices</h3>
+            <p>Explore homes, apartments, villas and rooms for every kind of lifestyle.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon search-icon" aria-hidden="true">🔎</div>
+            <h3>Easy Property Search</h3>
+            <p>Find the right place by location, property type and what fits your plans.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon connect-icon" aria-hidden="true">🤝</div>
+            <h3>Connect with Owners</h3>
+            <p>Discover listings and get one step closer to the people behind them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-inner">
+        <div class="cta-mark" aria-hidden="true">⌂</div>
+        <div class="cta-copy">
+          <p class="eyebrow">YOUR PROPERTY, ITS NEXT CHAPTER</p>
+          <h2>Have a Property to Sell or Rent?</h2>
+          <p>Let the right people find their way to your door.</p>
+        </div>
+        <a class="btn cta-button" href="owner-dashboard.html">List Your Property <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="logo footer-logo" href="index.html">E-<span>Housing</span></a>
+          <p>Your trusted property finder in Karnataka.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="#why-us">About</a>
+          <a href="#contact">Contact</a>
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 E-Housing. College Mini Project.</p>
+        <a href="#top" class="back-top" aria-label="Back to top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/properties.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
